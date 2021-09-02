@@ -5,8 +5,8 @@ app.get('/', (req, res) => {
     res.send("Welcome to the page!");
 });
 
-
-app.listen(3000, () => {
-    console.log("Displaying....");
+const port = process.env.port || 3000;
+app.listen(port, () => {
+    console.log("Display nodeying....");
 });
 
